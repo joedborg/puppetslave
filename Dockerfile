@@ -7,4 +7,4 @@ RUN yum -y install puppet-agent hostname
 RUN yum -y install epel-release
 RUN yum -y install python36
 
-CMD ["/usr/bin/true"]
+ENTRYPOINT ["/opt/puppetlabs/bin/puppet"]
